@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             for(i in 2 until number) {
                 if(number % i == 0) {
                     answer = false
+                    Log.d("divisible", number.toString() + "は" +i.toString()+"で割り切れました")
                     break
                 }
             }
@@ -80,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             for(i in 2 until number) {
                 if(number % i == 0) {
                     answer = true
+                    Log.d("divisible", number.toString() + "は" + i.toString()+"で割り切れました")
                     break
                 }
             }
